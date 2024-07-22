@@ -1,0 +1,124 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 70px 10fr / 2fr 8fr;
+    color: white;
+    grid-template-areas: 
+    "header header"
+    "nav-bar main"
+    ;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    /* Remove default styling */
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+
+    /* Add custom styles */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.header {
+    grid-area: header;
+    background-color: #312E47;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.header-left {
+    flex: auto;
+}
+
+.header-right {
+    flex: auto;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.header-right > input[type="text"] {
+    flex: .34;
+    border: 2px solid #424359;
+    background-color: #232135;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    color: #46475C;
+    font-size: 15px;
+}
+
+.profile-icon {
+    border: 2px solid #46475C;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.header-icons {
+    height: 39px;
+    width: 284.6px;
+}
+
+.search-icon {
+    position: relative;
+    top: 11px;
+    left: 35px;
+}
+
+.bell-icon {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px 0 50px;
+}
+
+.arrow-down {
+    display: flex;
+    padding-left: 8px;
+    justify-content: center;
+}
+
+.taskly {
+    width: 60px;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.main ,.nav-bar{
+    background-color: #232135;
+}
+
+.main {
+    grid-area: main;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+    border-right: 3px solid #46475C;
+}

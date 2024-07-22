@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Dashboard</title>
 </head>
 <body>
     <div class="header">
+        <img src="images/Taskly.png" class="taskly">
         <div class="header-left">
-            <img src="project-logo.svg" class="project-logo">
-            <h2>Task Manager</h2>
+            <h2>Taskly</h2>
         </div>
         <div class="header-right">
-            <img src="search-logo.svg" class="search-logo">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ced0d9;"></i>
+            </div>
             <input type="text" id="seach-bar" class="search-bar" placeholder="What's on you're mind">
-            <button><img src="notification-logo.svg" class="notification-logo"></button>
-            <button><img src="profile-photo.svg" class="profile-photo"></button>
-            <button><img src="arrow-logo.svg" class="arrow-logo"></button>
+            <div class="bell-icon"><button><i class="fa-regular fa-bell" style="color: #ced0d9;" class="header-icons"></i></button></div>
+            <div class="profile-icon"><button><i class="fa-regular fa-user" style="color: #ced0d9;" class="header-icons"></i></button></div>
+            <div class="arrow-down"><button><i class="fa-solid fa-angle-down" style="color: #ced0d9;" class="header-icons"></i></button></div>
         </div>
     </div>
     <div class="nav-bar">
@@ -180,11 +187,27 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    
+                    <p>08PM</p>
+                    <div class="dot"></div>
+                    <div class="discovery">
+                        <img src="team-logo-1.svg" class="team-logo-1">
+                        <img src="team-logo-2.svg" class="team-logo-2">
+                        <img src="team-logo-rest.svg" class="team-logo-rest">
+                    </div>
+                    <p>09PM</p>
+                    <div class="dot"></div>
+                    <div class="company">
+                        <img src="team-logo-4.svg" class="team-logo-4">
+                        <img src="team-logo-5.svg" class="team-logo-5">
+                    </div>
+                    <div>08PM</div>
+                    <div class="dot"></div>
+                    <div class="line"></div>
                 </div>
             </div> 
         </div>
     </div>
 </body>
+<script src="https://kit.fontawesome.com/a37893a5ac.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </html>
